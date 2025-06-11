@@ -1,0 +1,137 @@
+# 
+
+# diff all
+
+# version
+# Betaflight / STM32F7X2 (S7X2) 4.5.1 Sep 29 2024 / 15:16:40 (77d01ba3b) MSP API: 1.46
+# config rev: 9a8694f
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name AIKONF7
+manufacturer_id AIKO
+mcu_id 004300193432510f36303838
+signature 
+
+# name: QAV-S Mini
+
+# feature
+feature GPS
+feature TELEMETRY
+feature OSD
+feature ESC_SENSOR
+
+# serial
+serial 0 2 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+serial 2 131073 115200 57600 0 115200
+serial 3 1024 115200 57600 0 115200
+
+# aux
+aux 0 0 0 1800 2100 0 0
+aux 1 1 1 1800 2100 0 0
+aux 2 26 2 1800 2100 0 0
+
+# master
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 800
+set dyn_notch_count = 2
+set dyn_notch_q = 400
+set dyn_notch_min_hz = 90
+set dyn_notch_max_hz = 800
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+set acc_calibration = -9,10,-145,1
+set baro_hardware = NONE
+set rc_smoothing_auto_factor = 45
+set rc_smoothing_auto_factor_throttle = 45
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set bat_capacity = 1100
+set vbat_max_cell_voltage = 440
+set small_angle = 180
+set gps_sbas_mode = WAAS
+set gps_ublox_use_galileo = ON
+set gps_set_home_point_once = ON
+set pid_process_denom = 2
+set simplified_gyro_filter_multiplier = 160
+set osd_cap_alarm = 1100
+set osd_vbat_pos = 549
+set osd_rssi_pos = 57
+set osd_link_quality_pos = 2623
+set osd_rssi_dbm_pos = 3624
+set osd_tim_1_pos = 546
+set osd_tim_2_pos = 2608
+set osd_mah_drawn_pos = 2592
+set osd_craft_name_pos = 2054
+set osd_pilot_name_pos = 2048
+set osd_gps_sats_pos = 3108
+set osd_home_dir_pos = 3112
+set osd_home_dist_pos = 3115
+set osd_avg_cell_voltage_pos = 2616
+set osd_battery_usage_pos = 2597
+set rpm_filter_q = 1000
+set rpm_filter_fade_range_hz = 100
+set craft_name = QAV-S Mini
+set pilot_name = K4KPI
+
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_min_hz = 0
+set dterm_lpf1_dyn_max_hz = 0
+set dterm_lpf1_dyn_expo = 0
+set dterm_lpf1_static_hz = 101
+set dterm_lpf2_static_hz = 202
+set anti_gravity_gain = 120
+set iterm_relax_cutoff = 10
+set p_pitch = 49
+set i_pitch = 132
+set d_pitch = 27
+set f_pitch = 118
+set i_roll = 120
+set d_roll = 23
+set f_roll = 108
+set i_yaw = 120
+set f_yaw = 108
+set d_min_roll = 23
+set d_min_pitch = 27
+set feedforward_smooth_factor = 30
+set simplified_i_gain = 150
+set simplified_d_gain = 80
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 90
+set simplified_pitch_pi_gain = 105
+set simplified_dterm_filter_multiplier = 135
+set tpa_rate = 45
+set tpa_breakpoint = 1650
+set ez_landing_limit = 5
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 
