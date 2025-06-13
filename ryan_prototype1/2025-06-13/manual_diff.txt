@@ -1,0 +1,141 @@
+# diff
+
+# version
+# Betaflight / STM32F405 (S405) 4.5.1 Feb  8 2025 / 22:15:11 (77d01ba3b) MSP API: 1.46
+# config rev: fd1c46d
+
+# start the command batch
+batch start
+
+board_name AIKONF4
+manufacturer_id AIKO
+
+# name: McFly2.0
+
+# feature
+feature TELEMETRY
+feature OSD
+feature ESC_SENSOR
+
+# serial
+serial 0 2048 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+serial 3 1024 115200 57600 0 115200
+
+# aux
+aux 0 0 0 1800 2100 0 0
+aux 1 1 1 1800 2100 0 0
+aux 2 26 2 1800 2100 0 0
+aux 3 35 3 1725 2100 0 0
+aux 4 36 4 1775 2100 0 0
+
+# vtxtable
+vtxtable bands 5
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A FACTORY 5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B FACTORY 5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E FACTORY 5705 5685 5665    0 5885 5905    0    0
+vtxtable band 4 FATSHARK F FACTORY 5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable powerlevels 4
+vtxtable powervalues 0 1 2 3
+vtxtable powerlabels 25 200 400 600
+
+# master
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 0
+set dyn_notch_count = 2
+set dyn_notch_q = 400
+set dyn_notch_min_hz = 90
+set dyn_notch_max_hz = 800
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+set acc_calibration = 1,137,-62,1
+set blackbox_sample_rate = 1/2
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set motor_output_reordering = 2,0,3,1,4,5,6,7
+set ibata_scale = 242
+set small_angle = 180
+set pid_process_denom = 2
+set simplified_gyro_filter_multiplier = 160
+set osd_rssi_alarm = 0
+set osd_rssi_dbm_alarm = -100
+set osd_cap_alarm = 500
+set osd_vbat_pos = 353
+set osd_link_quality_pos = 2085
+set osd_rssi_dbm_pos = 2117
+set osd_tim_1_pos = 343
+set osd_tim_2_pos = 2454
+set osd_flymode_pos = 2436
+set osd_throttle_pos = 2390
+set osd_current_pos = 289
+set osd_mah_drawn_pos = 2441
+set osd_craft_name_pos = 99
+set osd_pilot_name_pos = 131
+set osd_warnings_pos = 2378
+set osd_avg_cell_voltage_pos = 2447
+set osd_battery_usage_pos = 361
+set osd_canvas_height = 13
+set vtx_band = 5
+set vtx_channel = 8
+set vtx_power = 4
+set vtx_low_power_disarm = UNTIL_FIRST_ARM
+set vtx_freq = 5917
+set vcd_video_system = NTSC
+set rpm_filter_q = 1000
+set rpm_filter_fade_range_hz = 100
+set craft_name = McFly2.0
+set pilot_name = K4KPI
+
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_min_hz = 0
+set dterm_lpf1_dyn_max_hz = 0
+set dterm_lpf1_dyn_expo = 0
+set dterm_lpf1_static_hz = 105
+set dterm_lpf2_static_hz = 210
+set anti_gravity_gain = 120
+set p_pitch = 51
+set i_pitch = 101
+set d_pitch = 37
+set f_pitch = 112
+set p_roll = 47
+set i_roll = 91
+set d_roll = 32
+set f_roll = 102
+set p_yaw = 47
+set i_yaw = 91
+set f_yaw = 102
+set d_min_roll = 32
+set d_min_pitch = 37
+set feedforward_transition = 30
+set simplified_master_multiplier = 95
+set simplified_i_gain = 110
+set simplified_d_gain = 115
+set simplified_pi_gain = 110
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 90
+set simplified_pitch_pi_gain = 105
+set simplified_dterm_filter_multiplier = 140
+set tpa_rate = 45
+set tpa_breakpoint = 1650
+set ez_landing_limit = 5
+
+rateprofile 0
+
+# rateprofile 0
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 100
+set pitch_rc_rate = 100
+set yaw_rc_rate = 90
+set roll_srate = 80
+set pitch_srate = 80
+set yaw_srate = 80
+
+# end the command batch
+batch end
+
+# 
