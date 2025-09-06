@@ -1,0 +1,44 @@
+# OSD Configuration Settings
+# Copy and paste these commands into the CLI of your new quad
+
+# OSD Units and Alarms
+set osd_units = IMPERIAL
+set osd_warn_bitmask = 24575
+set osd_rssi_alarm = 0
+set osd_rssi_dbm_alarm = -100
+set osd_cap_alarm = 875
+
+# OSD Element Positions
+set osd_vbat_pos = 387
+set osd_link_quality_pos = 3590
+set osd_rssi_dbm_pos = 3558
+set osd_tim_2_pos = 2642
+set osd_flymode_pos = 2627
+set osd_throttle_pos = 3527
+set osd_current_pos = 587
+set osd_mah_drawn_pos = 2618
+set osd_pilot_name_pos = 2049
+set osd_gps_speed_pos = 2073
+set osd_gps_lon_pos = 3105
+set osd_gps_lat_pos = 3073
+set osd_gps_sats_pos = 2056
+set osd_home_dir_pos = 2106
+set osd_home_dist_pos = 1039
+set osd_altitude_pos = 18451
+set osd_warnings_pos = 14709
+set osd_avg_cell_voltage_pos = 2650
+set osd_pit_ang_pos = 471
+set osd_battery_usage_pos = 588
+
+# OSD Statistics
+set osd_stat_bitmask = 10487532
+
+# Display Settings
+set osd_displayport_device = MSP
+set vcd_video_system = HD
+
+# Pilot Name
+set pilot_name = K4KPI
+
+# Save settings
+save
