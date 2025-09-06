@@ -1,0 +1,19 @@
+# Aux Switch Configuration
+# Copy and paste these commands into the CLI of your new quad
+
+# Aux Channel Assignments
+aux 0 0 0 1700 2100 0 0    # ARM on AUX1, range 1700-2100
+aux 1 1 1 1300 2100 0 0    # ANGLE mode on AUX2, range 1300-2100  
+aux 2 13 5 1925 2100 0 0   # BEEPER on AUX6, range 1925-2100
+aux 3 26 3 1700 2100 0 0   # GPS RESCUE on AUX4, range 1700-2100
+aux 4 36 4 1775 2100 0 0   # FLIP OVER AFTER CRASH on AUX5, range 1775-2100
+
+# Save settings
+save
+
+# Switch Function Reference:
+# aux 0: ARM - Enable/disable motors
+# aux 1: ANGLE - Stabilized flight mode (self-leveling)
+# aux 2: BEEPER - Find quad buzzer
+# aux 3: GPS RESCUE - Emergency GPS return to home
+# aux 4: FLIP OVER AFTER CRASH - Turtle mode for flipping over
