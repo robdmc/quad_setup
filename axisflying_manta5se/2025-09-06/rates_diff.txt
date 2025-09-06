@@ -1,0 +1,17 @@
+# Rate Profile Settings
+# Copy and paste these commands into the CLI of your new quad
+
+# Switch to rateprofile 0 (if not already active)
+rateprofile 0
+
+# Rate Configuration
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 100
+set pitch_rc_rate = 100
+set yaw_rc_rate = 90
+set roll_srate = 80
+set pitch_srate = 80
+set yaw_srate = 80
+
+# Save settings
+save
