@@ -8,8 +8,6 @@ aux 2 13 5 1925 2100 0 0   # BEEPER on AUX6, range 1925-2100
 aux 3 26 3 1700 2100 0 0   # GPS RESCUE on AUX4, range 1700-2100
 aux 4 36 4 1775 2100 0 0   # FLIP OVER AFTER CRASH on AUX5, range 1775-2100
 
-# Save settings
-save
 
 # Switch Function Reference:
 # aux 0: ARM - Enable/disable motors
