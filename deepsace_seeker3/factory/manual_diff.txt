@@ -1,0 +1,100 @@
+diff
+
+# version
+# Betaflight / STM32F7X2 (S7X2) 4.4.3 Nov 24 2023 / 01:26:33 (738127e7e) MSP API: 1.45
+
+# config: YES
+
+# start the command batch
+batch start
+
+board_name HAKRCF722V2
+manufacturer_id HARC
+
+# name: seeker3
+
+# feature
+feature GPS
+
+# serial
+serial 0 64 115200 57600 0 115200
+serial 3 131073 115200 57600 0 115200
+serial 5 2 115200 57600 0 115200
+
+# aux
+aux 0 0 0 900 1300 0 0
+
+# master
+set gyro_lpf1_static_hz = 0
+set gyro_to_use = BOTH
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 150
+set acc_lpf_hz = 10
+set acc_calibration = -24,20,17,1
+set mag_hardware = NONE
+set blackbox_sample_rate = 1/2
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set failsafe_switch_mode = STAGE2
+set failsafe_procedure = GPS-RESCUE
+set ibata_scale = 160
+set yaw_motors_reversed = ON
+set small_angle = 180
+set gps_auto_baud = ON
+set gps_ublox_use_galileo = ON
+set gps_rescue_allow_arming_without_fix = ON
+set deadband = 2
+set yaw_deadband = 2
+set pid_process_denom = 2
+set osd_vbat_pos = 417
+set osd_link_quality_pos = 2552
+set osd_tim_2_pos = 2529
+set osd_throttle_pos = 460
+set osd_current_pos = 233
+set osd_craft_name_pos = 2540
+set osd_gps_speed_pos = 257
+set osd_gps_sats_pos = 2081
+set osd_home_dir_pos = 2096
+set osd_home_dist_pos = 2090
+set osd_avg_cell_voltage_pos = 2497
+set osd_displayport_device = MSP
+set osd_canvas_width = 30
+set osd_canvas_height = 16
+set debug_mode = GYRO_SCALED
+set vcd_video_system = HD
+set rpm_filter_min_hz = 125
+set craft_name = seeker3
+
+profile 0
+
+# profile 0
+set d_pitch = 41
+set f_pitch = 0
+set d_roll = 27
+set f_roll = 0
+set f_yaw = 0
+set d_min_roll = 27
+set d_min_pitch = 41
+set feedforward_smooth_factor = 40
+set feedforward_jitter_factor = 9
+set dyn_idle_min_rpm = 25
+set simplified_d_gain = 90
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 0
+set simplified_pitch_d_gain = 135
+
+rateprofile 0
+
+# rateprofile 0
+set roll_expo = 30
+set pitch_expo = 30
+set yaw_expo = 30
+set roll_srate = 62
+set pitch_srate = 62
+set yaw_srate = 62
+
+# end the command batch
+batch end
+
+# 
