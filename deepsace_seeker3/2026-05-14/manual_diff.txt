@@ -1,0 +1,124 @@
+diff
+
+# version
+# Betaflight / STM32F7X2 (S7X2) 4.4.3 Nov 24 2023 / 01:26:33 (738127e7e) MSP API: 1.45
+
+# config: YES
+
+# start the command batch
+batch start
+
+board_name HAKRCF722V2
+manufacturer_id HARC
+
+# name: seeker3
+
+# feature
+feature GPS
+
+# serial
+serial 0 64 115200 57600 0 115200
+serial 3 131073 115200 57600 0 115200
+serial 5 2 115200 57600 0 115200
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1300 2100 0 0
+aux 2 46 3 1300 2075 0 0
+aux 3 13 2 1925 2100 0 0
+aux 4 35 5 1650 2100 0 0
+aux 5 36 4 1775 2100 0 0
+
+# master
+set gyro_lpf1_static_hz = 0
+set gyro_to_use = BOTH
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 150
+set acc_lpf_hz = 10
+set acc_calibration = -24,20,17,1
+set mag_hardware = NONE
+set blackbox_sample_rate = 1/2
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set failsafe_switch_mode = STAGE2
+set failsafe_procedure = GPS-RESCUE
+set ibata_scale = 160
+set yaw_motors_reversed = ON
+set small_angle = 180
+set gps_auto_baud = ON
+set gps_ublox_use_galileo = ON
+set gps_rescue_allow_arming_without_fix = ON
+set deadband = 2
+set yaw_deadband = 2
+set pid_process_denom = 2
+set osd_units = IMPERIAL
+set osd_warn_bitmask = 24575
+set osd_rssi_alarm = 0
+set osd_rssi_dbm_alarm = -100
+set osd_cap_alarm = 875
+set osd_vbat_pos = 387
+set osd_link_quality_pos = 3590
+set osd_rssi_dbm_pos = 3558
+set osd_tim_2_pos = 2642
+set osd_flymode_pos = 2627
+set osd_throttle_pos = 3527
+set osd_current_pos = 587
+set osd_mah_drawn_pos = 2618
+set osd_craft_name_pos = 2081
+set osd_pilot_name_pos = 2049
+set osd_gps_speed_pos = 2073
+set osd_gps_lon_pos = 3105
+set osd_gps_lat_pos = 3073
+set osd_gps_sats_pos = 2056
+set osd_home_dir_pos = 2106
+set osd_home_dist_pos = 1039
+set osd_altitude_pos = 18451
+set osd_warnings_pos = 14709
+set osd_avg_cell_voltage_pos = 2650
+set osd_pit_ang_pos = 471
+set osd_battery_usage_pos = 588
+set osd_stat_bitmask = 10487532
+set osd_displayport_device = MSP
+set debug_mode = GYRO_SCALED
+set vcd_video_system = HD
+set rpm_filter_min_hz = 125
+set craft_name = seeker3
+set pilot_name = K4KPI
+
+profile 0
+
+# profile 0
+set d_pitch = 41
+set f_pitch = 0
+set d_roll = 27
+set f_roll = 0
+set f_yaw = 0
+set d_min_roll = 27
+set d_min_pitch = 41
+set feedforward_smooth_factor = 40
+set feedforward_jitter_factor = 9
+set dyn_idle_min_rpm = 25
+set simplified_d_gain = 90
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 0
+set simplified_pitch_d_gain = 135
+
+rateprofile 0
+
+# rateprofile 0
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 100
+set pitch_rc_rate = 100
+set yaw_rc_rate = 90
+set roll_expo = 30
+set pitch_expo = 30
+set yaw_expo = 30
+set roll_srate = 80
+set pitch_srate = 80
+set yaw_srate = 80
+
+# end the command batch
+batch end
+
+# 
