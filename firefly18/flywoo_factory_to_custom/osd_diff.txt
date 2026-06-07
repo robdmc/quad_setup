@@ -1,0 +1,53 @@
+# OSD Configuration — firefly18
+# Ported from firefly20pro/2026-05-14/manual_diff.txt
+# Board: FLYWOOF405S_AIO | Betaflight 4.5.1 | DJI O4 / HD video (MSP DisplayPort)
+# GPS-dependent elements removed (firefly18 has no GPS). Paste into CLI.
+
+# Units and Alarms
+set osd_units = IMPERIAL
+set osd_warn_bitmask = 24575
+set osd_rssi_alarm = 0
+set osd_rssi_dbm_alarm = -100
+set osd_cap_alarm = 875
+
+# Element Positions (only enabled elements; 234 = hidden/default upstream)
+set osd_vbat_pos = 387
+set osd_rssi_pos = 256
+set osd_link_quality_pos = 3533
+set osd_rssi_dbm_pos = 3565
+set osd_tim_1_pos = 376
+set osd_tim_2_pos = 2634
+set osd_flymode_pos = 2626
+set osd_throttle_pos = 3501
+set osd_crosshairs_pos = 205
+set osd_ah_sbar_pos = 206
+set osd_ah_pos = 78
+set osd_current_pos = 491
+set osd_mah_drawn_pos = 2642
+set osd_craft_name_pos = 2050
+set osd_pilot_name_pos = 1
+set osd_altitude_pos = 16403
+set osd_warnings_pos = 14709
+set osd_avg_cell_voltage_pos = 2649
+set osd_pit_ang_pos = 471
+set osd_battery_usage_pos = 492
+set osd_disarmed_pos = 459
+set osd_up_down_reference_pos = 205
+set osd_core_temp_pos = 281
+set osd_camera_frame_pos = 35
+
+# REMOVED (no GPS on firefly18): osd_gps_speed, osd_gps_lon, osd_gps_lat,
+# osd_gps_sats, osd_home_dir, osd_home_dist.
+
+# Statistics
+set osd_stat_bitmask = 10487532
+
+# Display / video system — switch firefly18 to the firefly20pro's O4 HD canvas.
+# (firefly18 factory was AUTO / 30x13; the positions above are encoded for 53x20,
+#  so this canvas change is REQUIRED for them to land correctly.)
+set osd_displayport_device = MSP
+set osd_canvas_width = 53
+set osd_canvas_height = 20
+set vcd_video_system = HD
+
+save

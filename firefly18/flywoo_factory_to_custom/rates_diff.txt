@@ -1,0 +1,21 @@
+# Rate Profile Settings — firefly18
+# Ported from firefly20pro/2026-05-14/manual_diff.txt (was rateprofile 2 there).
+# Targets rateprofile 0 (the firefly18's active profile). Paste into CLI.
+
+rateprofile 0
+
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 100
+set pitch_rc_rate = 100
+set yaw_rc_rate = 90
+set roll_expo = 30
+set pitch_expo = 30
+set yaw_expo = 30
+set roll_srate = 80
+set pitch_srate = 80
+set yaw_srate = 80
+
+# Note: throttle curve (thr_mid/thr_expo) not touched — firefly18 factory keeps
+# its own (70/40); the 5/14 source left them at default.
+
+save

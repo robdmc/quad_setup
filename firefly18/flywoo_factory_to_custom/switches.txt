@@ -1,0 +1,11 @@
+# Aux Switch Configuration — firefly18
+# Ported from firefly20pro/2026-05-14/manual_diff.txt (FLYWOOF405S_AIO)
+# Paste into the Betaflight Configurator CLI.
+
+aux 0 0 0 1700 2100 0 0    # ARM                    (mode id 0)
+aux 1 1 1 1450 2075 0 0    # ANGLE                  (mode id 1)
+aux 2 13 2 1250 2100 0 0   # BEEPER                 (mode id 13)
+aux 3 35 5 1700 2100 0 0   # FLIP OVER AFTER CRASH  (mode id 35, turtle)
+aux 4 36 4 1675 2075 0 0   # PREARM                 (mode id 36)
+
+# No GPS RESCUE switch — the 5/14 source had none and the firefly18 has no GPS.
